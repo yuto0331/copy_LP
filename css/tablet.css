@@ -1,0 +1,2439 @@
+/* 425px〜767px：tablet
+-------------------------------------------------------------------------------------------- */
+@media screen and (min-width:425px) and (max-width:767px) { 
+
+.none{
+    display:none;
+  }
+.tablet_area{
+    display:block;
+  }
+
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header_title {
+  /*height: 70px;*/
+  width: 100%;
+  margin: 0 ;
+  /*padding: 0 auto;*/
+  position: fixed;      
+  background-color: #ffffff;
+}
+.header_image{
+  display: block;
+  /*clear:both;*/
+  width: 128px;
+  height: 45px;
+  padding-left: 50px;
+  position: relative;
+  bottom: -10px;
+}
+.head_sub{
+  height: 18px;
+  width: 500px;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  bottom: -20px;
+  float: left;
+}
+.header_btn{
+    font-family: "メイリオ";
+    font-size: 14px;
+    font-weight: 300;
+    float: right;
+    line-height: 42px;
+    text-align: center;
+    background-color: #DA6B64;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 50px 0 0;
+    width: 318px;
+    height: 42px;
+    position: relative;
+    bottom: -10px;
+}
+
+/*ここからmain*/
+.txtl{
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  color: #333333;
+}
+
+.txt2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main_image{
+  /*display: block;*/
+  background-image: url(../images/isaralogolarge.png) center top no-repeat;
+  background-size: contain;
+  width: 317px;
+  height: 111px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main{
+  top: 70px;
+  clear: both;
+  margin-top: 0px;
+  padding-top: 100px;
+  text-align: center;
+  background-image: url(../images/main.png);
+  background-size: cover;
+  height: 500px;
+}
+
+.otoiawase{
+  height: 560px;
+  background-color: #EBB94D;
+  margin:0;
+  padding-top: 35px;
+  color:#ffffff;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+p#money{
+  color: #c7254e;
+  line-height: 29px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Consolas;
+  padding: 5px 5px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main_btn{
+  width: 1035px;
+  height: 110px;
+  background-color: #DA6B64;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+#text2{
+  line-height: 34px;
+  font-size: 21px;
+}
+#text3{
+  margin-top: 50px;
+  line-height: 34px;
+  font-size: 21px;
+}
+
+/*ここからjiyu*/
+.jiyu{
+  height: 585px;
+  text-align: center;
+  background-image: url(../images/jiyu.png);
+  background-size: cover;
+}
+
+.jiyu h3{
+  position: relative;
+  width: 860px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100px;
+  margin-bottom: 50px;
+}
+
+.jiyu h3::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.jiyu h3::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+.jiyu p{
+  line-height: 32px;
+}
+.jiyu .under{
+  /*text-decoration: underline  これではダメ*/
+  /*border-bottom: solid 10px #EBB94D;*/
+  background: linear-gradient(transparent 70%, #EBB94D 70%);
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+/*ここからisaratoha*/
+.circle{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #EBB94D;
+  color: #ffffff;
+  line-height: 80px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400px;
+  margin: 0 auto;
+  position: relative;
+  top:-40px;
+  bottom: -40px;
+}
+
+.ikusei{
+  width: 860px;
+  height: 130px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;  
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  
+}
+.isaratoha h3{
+  width: 800px;
+  height: 80px;
+  text-align: center;
+  font-size: 28px;
+  line-height: px;
+  margin: 0px;
+  padding: 40px 0;
+}
+.isaratoha{
+  height: 650px;
+  background-color: #FEF5E0;
+  text-align: center;
+}
+.isaratoha h3::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.isaratoha h3::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+.isaratoha p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px; 
+}
+.sukiru{
+  width:1170px;
+  height: 255px;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+}
+#sukiru_sub{
+  margin-top:35px;
+}
+#sukiru_tagu {
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 19px;
+  margin: 0 20px;
+}
+/*ここからstep*/
+.step{
+  height: 585px;
+  box-sizing: border-box;
+  background-image: url(../images/aboutsecondbg.jpg);
+  background-size: contain;
+  padding-top: 60px;
+}
+.step h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+}
+#step_sub{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 25px 0 0;
+  padding: 0;
+}
+.step span{
+  color: #EBB94D;
+}
+.box_area{
+  text-align: center;
+  margin: 30px 0;
+}
+.step_box{
+  width: 320px;
+  height: 120px;
+  padding: 30px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #ffffff; 
+  display: inline-block;
+  border-radius: 5px;
+}
+#step{
+  padding: 0px;
+  border-radius: 5px;
+  background-color: #EBB94D;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px
+}
+#sub{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+#work{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px
+}
+#ao{
+  height: 145px;
+  background-color: #016EA9;
+}
+#ao p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+/*ここからmanabu*/
+.manabu{
+  height: 505px;
+  box-sizing: border-box;
+  padding: 60px;
+  text-align: center;
+}
+.manabu h3{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.manabu p{
+  font-weight: 300px;
+  font-size: 20px;
+  line-height: 32px;
+}
+#each_manabu_logo{
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+}
+.manabu p#manabu_sub{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+/*--------------------ここからmeritto*/
+.meritto{
+  height: 1020px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FEF5E0;
+  padding: 35px;
+}
+#meritto_text1{
+  margin:0 auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+}
+#meritto_text2{
+  margin:0 auto;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.meritto_title{
+  width: 850px;
+  height: 112px;
+  margin:0 auto;
+  padding: 25px 0 0 0 ;
+  position: relative;
+}
+.meritto_title::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.meritto_title::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+#each_meritto_tag{
+  width: 360px;
+  height: 180px;
+}
+.meritto_logo{
+  height: 400px;
+  margin: 40px 0;
+}
+
+.meritto_box{
+  vertical-align: top;
+  width: 360px;
+  height: 400px;
+  display: inline-block;
+  padding: 0;
+  margin: 0 15px ;
+}
+#meritto_text3{
+  color: #ebb94d;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  margin: 0;
+}
+#meritto_text4{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.mado_box{
+  width: 1170px;
+  height:265px;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+}
+#mado_text1{
+  margin-bottom: 0px;
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 45px; 
+  color: #ebb94d;
+}
+#mado_text2{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px; 
+}
+#mado_text3{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px; 
+}
+.notes{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px; 
+}
+
+/*---------------------ここからmenber*/
+.menber{
+  height: 1610px;
+  /*box-sizing: border-box;*/
+  margin: 0;
+  background-image: url(../images/teacherbg.jpg);
+  background-size: cover;
+  padding: 65px 0 0 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative; /*基準BOX*/
+}
+.menber h3{
+  font-weight: 600;
+  font-size:28px;
+  line-height: 40px; 
+  margin: 0px;
+}
+#menber_sub{
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size:16px;
+  line-height: 26px;
+}
+.menbers{
+  padding: 0px 200px;
+}
+.each_menber{
+ width: 370px;
+  height: 400px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 150px 15px;
+}
+.menber_img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position:relative;
+  bottom: -35px;
+}
+.each_menber_text{
+  border: 3px solid ;
+  font-weight: 300; 
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px;
+  width: 375px;
+  height: 365px;
+  box-sizing: border-box;
+}
+.qa{
+	position: absolute;
+	bottom: 0;
+	height: 270px;
+	width: 100%;
+  background-color: #EBB94D;
+  /*position: relative;*/
+  /*margin: 0;*/
+  padding: 40px;
+  box-sizing: border-box;
+}
+.qa_circle{
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: #EBB94D;
+  line-height: 80px;
+  font-weight:400; 
+  font-size: 14px;
+  margin: 0 auto;
+}
+.qa_sub p{
+  font-weight: 600; 
+  font-size: 28px;
+  line-height: 40px;
+  width: 860px;
+  height: 110px;
+  margin: 0px auto;
+  padding: 15px;
+}
+.qa_sub p::before{
+  color: #ffffff;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.qa_sub p::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+/*-----------------------ここからjitugen*/
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px;
+  border-color: #EBB94D transparent transparent transparent;
+  margin-right: auto;
+  margin-left: auto;
+}
+.jitugen{
+  height: 1070px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding:0;
+}
+.jitugen h3{
+  font-weight: 600px; 
+  font-size:28px;
+  line-height: 45px;
+  margin-bottom: 0;
+}
+.jitugen_title{
+  font-weight: 600; 
+  font-size:16px;
+  line-height: 26px;
+}
+.jitugen_sub{
+  font-weight: 600px; 
+  font-size:16px;
+  line-height: 26px;
+  color: #333333;
+}
+.each_company{
+  width: 761px;
+  height: 245px;
+  margin:auto;
+}
+.each_company img{
+  border: 2px solid #EBB94D;
+  float:left;
+}
+.company_text{
+  font-weight: 400px; 
+  font-size:18px;
+  line-height: 29px;
+  text-align: left;
+  color: #777777;
+  padding: 30px 0 0 280px;
+
+}
+.intro{
+  font-style: italic;
+  font-style: oblique;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 280px;
+  color: #777777;
+  text-decoration: underline;
+}
+/*-------------------------------------------------------ここからnaiyou*/
+.naiyou{
+  height: 950px;
+  background-image: url(../images/classbg.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+}
+.naiyou h3{
+  font-weight: 600px; 
+  font-size:28px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+.naiyou_sub{
+  font-weight: 600px; 
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+.naiyou_area{
+  color: black;
+  padding: 40px;
+  height: 600px;
+  
+}
+.jizen{
+  width: 370px;
+  height: 536px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+.naiyou ul {
+  border: 2px solid #016EA9;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0;
+  margin: 15px;
+}
+.tokou{
+  width: 375px;
+  height: 350px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+.li_head{
+  color: #ffffff;
+  font-weight:600;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: #016EA9;
+}
+.naiyou li{
+  list-style: none;
+  font-weight:600;
+  font-size: 16px;
+  line-height: 55px;
+}
+.naiyou li + li{
+  border-bottom: 2px dotted silver 
+}
+
+.naiyou li + li:last-child {
+  border-bottom: none;
+}
+
+.li_head{
+  color: #ffffff;
+  font-weight:600;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: #016EA9;
+  border-bottom: 2px solid #016EA9;
+}
+.risuku_zero {
+  clear: both;
+  height: 146px;
+  box-sizing: border-box;
+  background-color: #016EA9;
+  margin: 0;
+  font-weight: 600;
+  font-size:20px;
+  line-height:32px;
+  padding: 41px;
+}
+.risuku_zero p{
+  margin: 0;
+  padding: 0;
+}
+/*-------------------------ここからnagare*/
+.nagare {
+  height: 1835px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+#nagare_flow{
+  margin-bottom: 30px
+}
+.flow{
+  width:770px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.nagare h3{
+  margin: 60px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.nagare_area{
+}
+.nagare_title{
+  margin:0;
+  padding: 45px 0;
+  width: 170px;
+  height: 180px;
+  font-weight: 600;
+  font-size: 18px;
+  display: table-cell;
+}
+.consal{
+  height: 230px;
+  width: 1170px;
+  box-sizing: border-box;
+  background-color: #FEF5E0;
+  border-radius: 10px;
+  margin:0 auto;
+  padding: 0px 50px;
+}
+.nagare_text{
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+}
+.nagare_title_sub {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+.nagare_content {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+.nagare_content_2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+/*-------------------------------------------------------------ここからnaze*/
+.naze{
+  height: 500px;
+  box-sizing: border-box;
+  color: #fff;
+  background-image: url(../images/bangkokbg.jpg);
+  background-size: cover;
+}
+.naze_content{
+  padding:100px;
+}
+.naze h3{
+  font-weight:600; 
+  font-size: 24px;
+  line-height: 40px;
+}
+.naze_text1{
+  font-weight:300; 
+  font-size: 14px;
+  line-height: 22px;
+}
+.naze li{
+  font-weight:600; 
+  font-size: 16px;
+  line-height: 26px;
+}
+.naze_text2{
+  font-weight:600; 
+  font-size: 20px;
+  line-height: 32px;
+}
+/*-----------------------ここからtokuten*/
+.tokuten {
+  height: 700px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #F7C23C;
+  margin: 0;
+  padding: 40px;
+}
+.tokuten h3{
+   font-weight:600; 
+  font-size: 28px;
+  line-height: 40px;
+}
+.tokuten_title{
+  font-weight:600; 
+  font-size: 16px;
+  line-height: 26px;
+}
+.tokuten_title_sub {
+  color: #fff;
+}
+.tokuten_are_title{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 45px;
+  position: relative;
+  bottom: -20px;
+  background-color: #F7C23C;
+  width: 700px;
+  margin: auto;
+}
+.tokuten_area {
+  width: 1170px;
+  height: 360px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 2px solid #fff;
+  display:flex;
+  justify-content: center;
+}
+.tokuten_circle{
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  border-radius: 200px;
+  background-color: #fff;
+  margin: 50px;
+}
+.circle_title1 {
+  font-weight:300; 
+  font-size: 24px;
+  line-height: 38px;
+  color:#F7C23C;
+  padding: 20px 0 0 0 ;
+}
+.circle_title2 {
+  font-weight:600; 
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0px 20px;
+  margin: 0;
+}
+/*--------------------ここからnot_bora*/
+.not_bora {
+  height: 530px;
+  box-sizing: border-box;
+  background-image: url(../images/specialdetail.jpg);
+  background-size: cover;
+  margin:0;
+  color: #fff;
+  text-align: center;
+  padding: 65px;
+}
+.not_bora h3 {
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 45px;
+  margin: 0;
+}
+#not_bora_text1{
+  font-weight:600; 
+  font-size: 20px;
+  line-height: 32px;
+}
+#not_bora_text2{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 60px;
+  margin: 0 auto;
+  width: 850px;
+  height: 60px;
+  position: relative;
+}
+#not_bora_text2::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+}
+#not_bora_text2::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+}
+#not_bora_text3{
+  font-weight:600; 
+  font-size: 20px;
+  line-height: 32px;
+}
+/*----------------------ここからmessage*/
+.message{
+  height: 580px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 60px;
+}
+.message h3{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 40px;
+}
+.message h3{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 40px;
+}
+.message_sub {
+  font-weight: 700; 
+  font-size: 20px;
+  line-height: 32px;
+}
+.message_area{
+  width: 880px;
+  height: 350px;
+  display: table;
+  margin: auto;
+}
+.message_area img{
+  display: table-cell;
+}
+.message_content{
+  display: table-cell;
+  vertical-align: top;
+  text-align: left;
+  padding: 0 30px;
+    font-weight: 400; 
+  font-size: 14px;
+  line-height: 22px;
+}
+/*----------------------ここからsiryou*/
+.siryou{
+  height: 705px;
+  box-sizing: border-box;
+  background-color: #EBB94D;
+  padding: 50px;
+  text-align: center;
+}
+.siryou h3{
+  margin: 0;
+  font-weight: 600; 
+  font-size: 28px;
+  line-height: 48px;
+}
+#siryou_title_sub{
+  font-weight: 600; 
+  font-size: 16px;
+  line-height: 26px;
+}
+#first_name{
+  width: 760px;
+  height: 60px;
+  margin: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#second_name{
+  width: 760px;
+  height: 60px;
+  margin: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#email{
+  width: 760px;
+  height: 60px;
+  margin: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#content{
+  width: 760px;
+  height: 105px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: 25px 12px;*/
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 105px;
+  vertical-align: top;
+}
+#content textarea{
+  border-radius: 10px;
+  width: 760px;
+  height: 105px;
+  box-sizing: border-box;
+  margin: 50px px;
+  padding: 15px;
+    color: red;
+
+}
+#content::placeholder{
+    line-height: inherit;
+}
+#siryou_btn{
+  width: 760px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: #DA6B64;
+  border: 1px solid #DA6B64;
+  font-weight: 600;
+  font-size: 23px;
+  color: #fff;
+}
+/*------------------ここからquestion*/
+.question{
+  padding: 55px 145px;
+  box-sizing: border-box;
+}
+.question h3{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+#accordion {
+  width: 100%;
+}
+
+.qs_title{
+  border: solid 1px silver;
+  border-radius: 3px;
+  margin:5px;
+  cursor: pointer;   　　/*マウスオーバーで指マークに変わる*/
+  width: 970px;
+  height: 65px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height:65px;
+  padding: 0 40px;
+}
+
+.qs_content {
+  font-weight: 600;
+  font-size: 16px;
+  line-height:26px;
+  padding: 0 40px;
+  margin: 0px;
+  
+}
+.question h3{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+/*----------------------ここからfooter*/
+footer{
+  height: 178px;
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  padding: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 0 auto;
+}
+footer span{
+  color: #4987BD;
+}
+/*--------------------ここから戻るボタン*/
+#page_top{
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: silver;
+  opacity: 0.6;
+}
+/*#page_top a{*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  text-decoration: none;*/
+/*  background-color: red*/
+/*}*/
+#page_top a::before{
+  font-family: FontAwesome;
+  content: "\f077"; 
+  /*content: '↑';*/
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+p {color: blue}/* 利用の際は消去 */
+
+  
+  
+}/*ここまでtablet表記*/
+
+
+/* 768px〜     ：PC
+--------------------------------------------------------------------- */
+@media screen and (min-width:768px) {
+/*-- PC版表示CSS  --*/
+
+.none{
+  display:none;
+}
+.pc_area{
+  display:block;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header_title {
+  height: 70px;
+  width: 100%;
+  margin: 0 ;
+  /*padding: 0 auto;*/
+  position: fixed;      
+  background-color: #ffffff;
+}
+.header_image{
+  display: block;
+  /*clear:both;*/
+  width: 128px;
+  height: 45px;
+  padding-left: 50px;
+  position: relative;
+  bottom: -10px;
+}
+.head_sub{
+  height: 18px;
+  width: 500px;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  bottom: -20px;
+  float: left;
+}
+.header_btn{
+    font-family: "メイリオ";
+    font-size: 14px;
+    font-weight: 300;
+    float: right;
+    line-height: 42px;
+    text-align: center;
+    background-color: #DA6B64;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 50px 0 0;
+    width: 318px;
+    height: 42px;
+    position: relative;
+    bottom: -10px;
+}
+
+/*ここからmain*/
+.txtl{
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  color: #333333;
+}
+
+.txt2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main_image{
+  /*display: block;*/
+  background-image: url(../images/isaralogolarge.png) center top no-repeat;
+  background-size: contain;
+  width: 317px;
+  height: 111px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main{
+  top: 70px;
+  clear: both;
+  margin-top: 0px;
+  padding-top: 100px;
+  text-align: center;
+  background-image: url(../images/main.png);
+  background-size: cover;
+  height: 500px;
+}
+
+.otoiawase{
+  height: 560px;
+  background-color: #EBB94D;
+  margin:0;
+  padding-top: 35px;
+  color:#ffffff;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+p#money{
+  color: #c7254e;
+  line-height: 29px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Consolas;
+  padding: 5px 5px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main_btn{
+  width: 1035px;
+  height: 110px;
+  background-color: #DA6B64;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+#text2{
+  line-height: 34px;
+  font-size: 21px;
+}
+#text3{
+  margin-top: 50px;
+  line-height: 34px;
+  font-size: 21px;
+}
+
+/*ここからjiyu*/
+.jiyu{
+  height: 585px;
+  text-align: center;
+  background-image: url(../images/jiyu.png);
+  background-size: cover;
+}
+
+.jiyu h3{
+  position: relative;
+  width: 860px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100px;
+  margin-bottom: 50px;
+}
+
+.jiyu h3::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.jiyu h3::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+.jiyu p{
+  line-height: 32px;
+}
+.jiyu .under{
+  /*text-decoration: underline  これではダメ*/
+  /*border-bottom: solid 10px #EBB94D;*/
+  background: linear-gradient(transparent 70%, #EBB94D 70%);
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+/*ここからisaratoha*/
+.circle{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #EBB94D;
+  color: #ffffff;
+  line-height: 80px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400px;
+  margin: 0 auto;
+  position: relative;
+  top:-40px;
+  bottom: -40px;
+}
+
+.ikusei{
+  width: 860px;
+  height: 130px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;  
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  
+}
+.isaratoha h3{
+  width: 800px;
+  height: 80px;
+  text-align: center;
+  font-size: 28px;
+  line-height: px;
+  margin: 0px;
+  padding: 40px 0;
+}
+.isaratoha{
+  height: 650px;
+  background-color: #FEF5E0;
+  text-align: center;
+}
+.isaratoha h3::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.isaratoha h3::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+.isaratoha p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px; 
+}
+.sukiru{
+  width:1170px;
+  height: 255px;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+}
+#sukiru_sub{
+  margin-top:35px;
+}
+#sukiru_tagu {
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 19px;
+  margin: 0 20px;
+}
+/*ここからstep*/
+.step{
+  height: 585px;
+  box-sizing: border-box;
+  background-image: url(../images/aboutsecondbg.jpg);
+  background-size: contain;
+  padding-top: 60px;
+}
+.step h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+}
+#step_sub{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 25px 0 0;
+  padding: 0;
+}
+.step span{
+  color: #EBB94D;
+}
+.box_area{
+  text-align: center;
+  margin: 30px 0;
+}
+.step_box{
+  width: 320px;
+  height: 120px;
+  padding: 30px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #ffffff; 
+  display: inline-block;
+  border-radius: 5px;
+}
+#step{
+  padding: 0px;
+  border-radius: 5px;
+  background-color: #EBB94D;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px
+}
+#sub{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+#work{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px
+}
+#ao{
+  height: 145px;
+  background-color: #016EA9;
+}
+#ao p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+/*ここからmanabu*/
+.manabu{
+  height: 505px;
+  box-sizing: border-box;
+  padding: 60px;
+  text-align: center;
+}
+.manabu h3{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.manabu p{
+  font-weight: 300px;
+  font-size: 20px;
+  line-height: 32px;
+}
+#each_manabu_logo{
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+}
+.manabu p#manabu_sub{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+/*----------------------------------------------ここからmeritto*/
+.meritto{
+  height: 1020px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FEF5E0;
+  padding: 35px;
+}
+#meritto_text1{
+  margin:0 auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+}
+#meritto_text2{
+  margin:0 auto;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.meritto_title{
+  width: 850px;
+  height: 112px;
+  margin:0 auto;
+  padding: 25px 0 0 0 ;
+  position: relative;
+}
+.meritto_title::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.meritto_title::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+#each_meritto_tag{
+  width: 360px;
+  height: 180px;
+}
+.meritto_logo{
+  height: 400px;
+  margin: 40px 0;
+}
+
+.meritto_box{
+  vertical-align: top;
+  width: 360px;
+  height: 400px;
+  display: inline-block;
+  padding: 0;
+  margin: 0 15px ;
+}
+#meritto_text3{
+  color: #ebb94d;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  margin: 0;
+}
+#meritto_text4{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.mado_box{
+  width: 1170px;
+  height:265px;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+}
+#mado_text1{
+  margin-bottom: 0px;
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 45px; 
+  color: #ebb94d;
+}
+#mado_text2{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px; 
+}
+#mado_text3{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px; 
+}
+.notes{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px; 
+}
+
+/*------------------------------------------ここからmenber*/
+.menber{
+  height: 1610px;
+  /*box-sizing: border-box;*/
+  margin: 0;
+  background-image: url(../images/teacherbg.jpg);
+  background-size: cover;
+  padding: 65px 0 0 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative; /*基準BOX*/
+}
+.menber h3{
+  font-weight: 600;
+  font-size:28px;
+  line-height: 40px; 
+  margin: 0px;
+}
+#menber_sub{
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size:16px;
+  line-height: 26px;
+}
+.menbers{
+  padding: 0px 200px;
+}
+.each_menber{
+ width: 370px;
+  height: 400px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 150px 15px;
+}
+.menber_img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position:relative;
+  bottom: -35px;
+}
+.each_menber_text{
+  border: 3px solid ;
+  font-weight: 300; 
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px;
+  width: 375px;
+  height: 365px;
+  box-sizing: border-box;
+}
+.qa{
+	position: absolute;
+	bottom: 0;
+	height: 270px;
+	width: 100%;
+  background-color: #EBB94D;
+  /*position: relative;*/
+  /*margin: 0;*/
+  padding: 40px;
+  box-sizing: border-box;
+}
+.qa_circle{
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: #EBB94D;
+  line-height: 80px;
+  font-weight:400; 
+  font-size: 14px;
+  margin: 0 auto;
+}
+.qa_sub p{
+  font-weight: 600; 
+  font-size: 28px;
+  line-height: 40px;
+  width: 860px;
+  height: 110px;
+  margin: 0px auto;
+  padding: 15px;
+}
+.qa_sub p::before{
+  color: #ffffff;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.qa_sub p::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+/*-------------------------------------------ここからjitugen*/
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px;
+  border-color: #EBB94D transparent transparent transparent;
+  margin-right: auto;
+  margin-left: auto;
+}
+.jitugen{
+  height: 1070px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding:0;
+}
+.jitugen h3{
+  font-weight: 600px; 
+  font-size:28px;
+  line-height: 45px;
+  margin-bottom: 0;
+}
+.jitugen_title{
+  font-weight: 600; 
+  font-size:16px;
+  line-height: 26px;
+}
+.jitugen_sub{
+  font-weight: 600px; 
+  font-size:16px;
+  line-height: 26px;
+  color: #333333;
+}
+.each_company{
+  width: 761px;
+  height: 245px;
+  margin:auto;
+}
+.each_company img{
+  border: 2px solid #EBB94D;
+  float:left;
+}
+.company_text{
+  font-weight: 400px; 
+  font-size:18px;
+  line-height: 29px;
+  text-align: left;
+  color: #777777;
+  padding: 30px 0 0 280px;
+
+}
+.intro{
+  font-style: italic;
+  font-style: oblique;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 280px;
+  color: #777777;
+  text-decoration: underline;
+}
+/*-------------------------------------------------------ここからnaiyou*/
+.naiyou{
+  height: 950px;
+  background-image: url(../images/classbg.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+}
+.naiyou h3{
+  font-weight: 600px; 
+  font-size:28px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+.naiyou_sub{
+  font-weight: 600px; 
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+.naiyou_area{
+  color: black;
+  padding: 40px;
+  height: 600px;
+  
+}
+.jizen{
+  width: 370px;
+  height: 536px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+.naiyou ul {
+  border: 2px solid #016EA9;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0;
+  margin: 15px;
+}
+.tokou{
+  width: 375px;
+  height: 350px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+.li_head{
+  color: #ffffff;
+  font-weight:600;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: #016EA9;
+}
+.naiyou li{
+  list-style: none;
+  font-weight:600;
+  font-size: 16px;
+  line-height: 55px;
+}
+.naiyou li + li{
+  border-bottom: 2px dotted silver 
+}
+
+.naiyou li + li:last-child {
+  border-bottom: none;
+}
+
+.li_head{
+  color: #ffffff;
+  font-weight:600;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: #016EA9;
+  border-bottom: 2px solid #016EA9;
+}
+.risuku_zero {
+  clear: both;
+  height: 146px;
+  box-sizing: border-box;
+  background-color: #016EA9;
+  margin: 0;
+  font-weight: 600;
+  font-size:20px;
+  line-height:32px;
+  padding: 41px;
+}
+.risuku_zero p{
+  margin: 0;
+  padding: 0;
+}
+/*-------------------------------------------------------------ここからnagare*/
+.nagare {
+  height: 1835px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+#nagare_flow{
+  margin-bottom: 30px
+}
+.flow{
+  width:770px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.nagare h3{
+  margin: 60px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.nagare_area{
+}
+.nagare_title{
+  margin:0;
+  padding: 45px 0;
+  width: 170px;
+  height: 180px;
+  font-weight: 600;
+  font-size: 18px;
+  display: table-cell;
+}
+.consal{
+  height: 230px;
+  width: 1170px;
+  box-sizing: border-box;
+  background-color: #FEF5E0;
+  border-radius: 10px;
+  margin:0 auto;
+  padding: 0px 50px;
+}
+.nagare_text{
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+}
+.nagare_title_sub {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+.nagare_content {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+.nagare_content_2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+/*-------------------------------------------------------------ここからnaze*/
+.naze{
+  height: 500px;
+  box-sizing: border-box;
+  color: #fff;
+  background-image: url(../images/bangkokbg.jpg);
+  background-size: cover;
+}
+.naze_content{
+  padding:100px;
+}
+.naze h3{
+  font-weight:600; 
+  font-size: 24px;
+  line-height: 40px;
+}
+.naze_text1{
+  font-weight:300; 
+  font-size: 14px;
+  line-height: 22px;
+}
+.naze li{
+  font-weight:600; 
+  font-size: 16px;
+  line-height: 26px;
+}
+.naze_text2{
+  font-weight:600; 
+  font-size: 20px;
+  line-height: 32px;
+}
+/*-----------------------------------------------------------ここからtokuten*/
+.tokuten {
+  height: 700px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #F7C23C;
+  margin: 0;
+  padding: 40px;
+}
+.tokuten h3{
+   font-weight:600; 
+  font-size: 28px;
+  line-height: 40px;
+}
+.tokuten_title{
+  font-weight:600; 
+  font-size: 16px;
+  line-height: 26px;
+}
+.tokuten_title_sub {
+  color: #fff;
+}
+.tokuten_are_title{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 45px;
+  position: relative;
+  bottom: -20px;
+  background-color: #F7C23C;
+  width: 700px;
+  margin: auto;
+}
+.tokuten_area {
+  width: 1170px;
+  height: 360px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 2px solid #fff;
+  display:flex;
+  justify-content: center;
+}
+.tokuten_circle{
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  border-radius: 200px;
+  background-color: #fff;
+  margin: 50px;
+}
+.circle_title1 {
+  font-weight:300; 
+  font-size: 24px;
+  line-height: 38px;
+  color:#F7C23C;
+  padding: 20px 0 0 0 ;
+}
+.circle_title2 {
+  font-weight:600; 
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0px 20px;
+  margin: 0;
+}
+/*--------------------------------------------------------ここからnot_bora*/
+.not_bora {
+  height: 530px;
+  box-sizing: border-box;
+  background-image: url(../images/specialdetail.jpg);
+  background-size: cover;
+  margin:0;
+  color: #fff;
+  text-align: center;
+  padding: 65px;
+}
+.not_bora h3 {
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 45px;
+  margin: 0;
+}
+#not_bora_text1{
+  font-weight:600; 
+  font-size: 20px;
+  line-height: 32px;
+}
+#not_bora_text2{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 60px;
+  margin: 0 auto;
+  width: 850px;
+  height: 60px;
+  position: relative;
+}
+#not_bora_text2::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+}
+#not_bora_text2::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+}
+#not_bora_text3{
+  font-weight:600; 
+  font-size: 20px;
+  line-height: 32px;
+}
+/*-----------------------------------------------------------ここからmessage*/
+.message{
+  height: 580px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 60px;
+}
+.message h3{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 40px;
+}
+.message h3{
+  font-weight:600; 
+  font-size: 28px;
+  line-height: 40px;
+}
+.message_sub {
+  font-weight: 700; 
+  font-size: 20px;
+  line-height: 32px;
+}
+.message_area{
+  width: 880px;
+  height: 350px;
+  display: table;
+  margin: auto;
+}
+.message_area img{
+  display: table-cell;
+}
+.message_content{
+  display: table-cell;
+  vertical-align: top;
+  text-align: left;
+  padding: 0 30px;
+    font-weight: 400; 
+  font-size: 14px;
+  line-height: 22px;
+}
+/*----------------------------------------------------------ここからsiryou*/
+.siryou{
+  height: 705px;
+  box-sizing: border-box;
+  background-color: #EBB94D;
+  padding: 50px;
+  text-align: center;
+}
+.siryou h3{
+  margin: 0;
+  font-weight: 600; 
+  font-size: 28px;
+  line-height: 48px;
+}
+#siryou_title_sub{
+  font-weight: 600; 
+  font-size: 16px;
+  line-height: 26px;
+}
+#first_name{
+  width: 760px;
+  height: 60px;
+  margin: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#second_name{
+  width: 760px;
+  height: 60px;
+  margin: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#email{
+  width: 760px;
+  height: 60px;
+  margin: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#content{
+  width: 760px;
+  height: 105px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: 25px 12px;*/
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 105px;
+  vertical-align: top;
+}
+#content textarea{
+  border-radius: 10px;
+  width: 760px;
+  height: 105px;
+  box-sizing: border-box;
+  margin: 50px px;
+  padding: 15px;
+    color: red;
+
+}
+#content::placeholder{
+    line-height: inherit;
+}
+#siryou_btn{
+  width: 760px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: #DA6B64;
+  border: 1px solid #DA6B64;
+  font-weight: 600;
+  font-size: 23px;
+  color: #fff;
+}
+/*------------------------------------------------------------ここからquestion*/
+.question{
+  padding: 55px 145px;
+  box-sizing: border-box;
+}
+.question h3{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+#accordion {
+  width: 100%;
+}
+
+.qs_title{
+  border: solid 1px silver;
+  border-radius: 3px;
+  margin:5px;
+  cursor: pointer;   　　/*マウスオーバーで指マークに変わる*/
+  width: 970px;
+  height: 65px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height:65px;
+  padding: 0 40px;
+}
+
+.qs_content {
+  font-weight: 600;
+  font-size: 16px;
+  line-height:26px;
+  padding: 0 40px;
+  margin: 0px;
+  
+}
+.question h3{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+/*-------------------------------------------------------------ここからfooter*/
+footer{
+  height: 178px;
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  padding: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 0 auto;
+}
+footer span{
+  color: #4987BD;
+}
+/*-----------------------------------------------------------ここから戻るボタン*/
+#page_top{
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: silver;
+  opacity: 0.6;
+}
+/*#page_top a{*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  text-decoration: none;*/
+/*  background-color: red*/
+/*}*/
+#page_top a::before{
+  font-family: FontAwesome;
+  content: "\f077"; 
+  /*content: '↑';*/
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+p {color: blue}/* 利用の際は消去 */
+}
+

@@ -4,61 +4,111 @@
  - 425px〜767px： tablet  green
  - 768px〜     ： PC      blue
 ====================*/
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+/*ここは共通のheader----------------*/
+header{
+  width:100%;
+  position: fixed;
+  height: 62px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  z-index: 2;
+}
+.header_title {
+  height: 62px;
+  max-width: 100%;
+  top:0;
+  margin: 0 ;
+  background-color: #ffffff;
+  display: block;
+  clear: fixed;
+}
+.header_image img{
+  float: left;
+  box-sizing: border-box;
+  height: 40px;
+  width: 100px;
+  padding: 5px 5px;
+  margin: 20px 0;
+}
+.head_sub{
+  /*height: 10px;*/
+  width: 170px;
+  margin: 0px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  display: inline-block;
+}
+.head_sub p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  font-style: normal;
+}
+.header_siryou{
+  display: block;
+  text-align: center;
+  float: right;
+  padding: 9px 11px;
+  background-color: #da6b64;
+  height: 62px;
+  box-sizing: border-box;
+  color: #fff;
 
-/* 768px〜     ：PC
------------------------------- */
+}
+.header_siryou img{
+  display:block;
+}
+.header_siryou a{
+  display:block;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+.header{
+  float: right;
+}
+
+/*-- ここからmobile版表示CSS  --*/
+/*@media screen and (min-width:1px) and ( max-width:424px){*/
+@media screen and (max-width:424px){
+.none{
+    display:none;
+}
+.mobile_area{
+    display:block;
+}
+p {color: blue}
+}/*-- ここまでがmobile版  --*/
+/*-- ここからtablet版表示CSS  --*/
+@media screen and (min-width:425px) and (max-width:767px) { 
+.none{
+    display:none;
+}
+.tablet_area{
+    display:block;
+}
+p {color: yellow}
+}/*-- ここまでがtablet版  --*/
+/*-- ここからPC版表示CSS  pc_area --*/
 @media screen and (min-width:768px) {
-/*-- PC版表示CSS  --*/
-
 .none{
   display:none;
 }
 .pc_area{
   display:block;
-}
-
-
-
-
-
-
-body{
-  margin: 0;
-  padding: 0;
-}
-header{
-  width: 100%;
-  height: 75px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-.header_title {
-  height: 70px;
-  width: 100%;
-  margin: 0 ;
-  /*padding: 0 auto;*/
-  position: fixed;      
-  background-color: #ffffff;
-}
-.header_image{
-  display: block;
-  /*clear:both;*/
-  width: 128px;
-  height: 45px;
-  padding-left: 50px;
-  position: relative;
-  bottom: -10px;
-}
-.head_sub{
-  height: 18px;
-  width: 500px;
-  font-size: 12px;
-  font-weight: 600;
-  position: relative;
-  bottom: -20px;
-  float: left;
 }
 .header_btn{
     font-family: "メイリオ";
@@ -75,9 +125,42 @@ header{
     height: 42px;
     position: relative;
     bottom: -10px;
+    box-sizing: border-box;
+}
+/*.header_left{*/
+/*  display: block;*/
+/*  margin:5px;*/
+/*  line-height: 50px;*/
+/*  width:500px;*/
+/*  box-sizing: border-box;*/
+/*}*/
+.header_image img{
+  height: 50px;
+  width: 130px;
+  margin: 10px;
+  display: inline-block;
+  padding: 0;
+  
+}
+.head_sub{
+  width: 300px;
+  margin: 30px 0 0 140px;
+  /*position: absolute;*/
+  top: 8px;
+  left: 10px;
+  display: inline-block;
+}
+.head_sub p {
+  font-size: 12px;
+  line-height: 19px;
 }
 
-/*ここからmain*/
+
+
+p {color: green}
+}/*-- ここまでがPC版  --*/
+
+/*ここからmainーーーーーーーーー*/
 .txtl{
   text-align: center;
   font-weight: 600;
@@ -93,8 +176,9 @@ header{
 
 .main_image{
   /*display: block;*/
-  background-image: url(../images/isaralogolarge.png);
+  background-image: url(../images/isaralogolarge.png) center top no-repeat;
   background-size: contain;
+  text-align: center;
   width: 317px;
   height: 111px;
   margin-bottom: 20px;
@@ -133,13 +217,13 @@ p#money{
   padding: 5px 5px;
   background-color: #f6f6f6;
   border-radius: 6px;
-  width: 520px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .main_btn{
-  width: 1035px;
+  width: 100%;
   height: 110px;
   background-color: #DA6B64;
   border-radius: 100px;
@@ -171,7 +255,7 @@ p#money{
 
 .jiyu h3{
   position: relative;
-  width: 860px;
+  width: 100%;
   height: 100px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -238,7 +322,7 @@ p#money{
 }
 
 .ikusei{
-  width: 860px;
+  width: 100%;
   height: 130px;
   margin: 0px;
   margin-left: auto;
@@ -249,7 +333,7 @@ p#money{
   
 }
 .isaratoha h3{
-  width: 800px;
+  width: 100%;
   height: 80px;
   text-align: center;
   font-size: 28px;
@@ -292,7 +376,7 @@ p#money{
   line-height: 32px; 
 }
 .sukiru{
-  width:1170px;
+  width: 100%;
   height: 255px;
   background-color: #ffffff;
   border: 2px solid #EBB94D;
@@ -419,7 +503,7 @@ p#money{
   box-sizing: border-box;
   text-align: center;
   background-color: #FEF5E0;
-  padding: 35px;
+  padding: 0px;
 }
 #meritto_text1{
   margin:0 auto;
@@ -434,7 +518,7 @@ p#money{
   line-height: 40px;
 }
 .meritto_title{
-  width: 850px;
+  width: 100%;
   height: 112px;
   margin:0 auto;
   padding: 25px 0 0 0 ;
@@ -465,7 +549,7 @@ p#money{
   border-right: 4px solid #EBB94D;
 }
 #each_meritto_tag{
-  width: 360px;
+  width: 100%;
   height: 180px;
 }
 .meritto_logo{
@@ -497,7 +581,7 @@ p#money{
   margin-bottom: 0px;
 }
 .mado_box{
-  width: 1170px;
+  width: 100%;
   height:265px;
   background-color: #ffffff;
   border: 2px solid #EBB94D;
@@ -552,7 +636,7 @@ p#money{
   line-height: 26px;
 }
 .menbers{
-  padding: 0px 200px;
+  padding: auto;
 }
 .each_menber{
  width: 370px;
@@ -605,7 +689,7 @@ p#money{
   font-weight: 600; 
   font-size: 28px;
   line-height: 40px;
-  width: 860px;
+  width: 100%;
   height: 110px;
   margin: 0px auto;
   padding: 15px;
@@ -653,7 +737,7 @@ p#money{
   padding:0;
 }
 .jitugen h3{
-  font-weight: 600px; 
+  font-weight: 600; 
   font-size:28px;
   line-height: 45px;
   margin-bottom: 0;
@@ -670,7 +754,7 @@ p#money{
   color: #333333;
 }
 .each_company{
-  width: 761px;
+  width: 100%;
   height: 245px;
   margin:auto;
 }
@@ -723,7 +807,8 @@ p#money{
 }
 .naiyou_area{
   color: black;
-  padding: 40px;
+  /*あとで修正*/
+  padding: 0px; 
   height: 600px;
   
 }
@@ -800,10 +885,11 @@ p#money{
   text-align: center;
 }
 #nagare_flow{
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  width: 100%;
 }
 .flow{
-  width:770px;
+  width:100%;
   height: 60px;
   margin: 0;
   padding: 0;
@@ -828,7 +914,7 @@ p#money{
 }
 .consal{
   height: 230px;
-  width: 1170px;
+  width: 100%;
   box-sizing: border-box;
   background-color: #FEF5E0;
   border-radius: 10px;
@@ -887,14 +973,15 @@ p#money{
   font-size: 20px;
   line-height: 32px;
 }
-/*-----------------------------------------------------------ここからtokuten*/
+/*--------------------------------ここからtokuten*/
 .tokuten {
   height: 700px;
   box-sizing: border-box;
   text-align: center;
   background-color: #F7C23C;
   margin: 0;
-  padding: 40px;
+  /*後で修正*/
+  padding: 0px;
 }
 .tokuten h3{
    font-weight:600; 
@@ -909,18 +996,18 @@ p#money{
 .tokuten_title_sub {
   color: #fff;
 }
-.tokuten_are_title{
+.tokuten_area_title{
   font-weight:600; 
   font-size: 28px;
   line-height: 45px;
   position: relative;
   bottom: -20px;
   background-color: #F7C23C;
-  width: 700px;
+  width: 100%;
   margin: auto;
 }
 .tokuten_area {
-  width: 1170px;
+  max-width: 100%;
   height: 360px;
   box-sizing: border-box;
   margin: auto;
@@ -950,7 +1037,7 @@ p#money{
   padding: 0px 20px;
   margin: 0;
 }
-/*--------------------------------------------------------ここからnot_bora*/
+/*---------------------------ここからnot_bora*/
 .not_bora {
   height: 530px;
   box-sizing: border-box;
@@ -977,7 +1064,7 @@ p#money{
   font-size: 28px;
   line-height: 60px;
   margin: 0 auto;
-  width: 850px;
+  width: 100%;
   height: 60px;
   position: relative;
 }
@@ -1010,7 +1097,7 @@ p#money{
   font-size: 20px;
   line-height: 32px;
 }
-/*-----------------------------------------------------------ここからmessage*/
+/*-------------------ここからmessage*/
 .message{
   height: 580px;
   box-sizing: border-box;
@@ -1033,7 +1120,7 @@ p#money{
   line-height: 32px;
 }
 .message_area{
-  width: 880px;
+  width: 100%;
   height: 350px;
   display: table;
   margin: auto;
@@ -1050,7 +1137,7 @@ p#money{
   font-size: 14px;
   line-height: 22px;
 }
-/*----------------------------------------------------------ここからsiryou*/
+/*---------------ここからsiryou*/
 .siryou{
   height: 705px;
   box-sizing: border-box;
@@ -1070,7 +1157,7 @@ p#money{
   line-height: 26px;
 }
 #first_name{
-  width: 760px;
+  width: 100%;
   height: 60px;
   margin: 12px;
   border-radius: 10px;
@@ -1078,7 +1165,7 @@ p#money{
   padding: 15px;
 }
 #second_name{
-  width: 760px;
+  width: 100%;
   height: 60px;
   margin: 12px;
   border-radius: 10px;
@@ -1086,7 +1173,7 @@ p#money{
   padding: 15px;
 }
 #email{
-  width: 760px;
+  width: 100%;
   height: 60px;
   margin: 12px;
   border-radius: 10px;
@@ -1094,7 +1181,7 @@ p#money{
   padding: 15px;
 }
 #content{
-  width: 760px;
+  width: 100%;
   height: 105px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1109,7 +1196,7 @@ p#money{
 }
 #content textarea{
   border-radius: 10px;
-  width: 760px;
+  width: 100%;
   height: 105px;
   box-sizing: border-box;
   margin: 50px px;
@@ -1121,7 +1208,7 @@ p#money{
     line-height: inherit;
 }
 #siryou_btn{
-  width: 760px;
+  width: 100%;
   height: 55px;
   border-radius: 50px;
   background-color: #DA6B64;
@@ -1130,7 +1217,7 @@ p#money{
   font-size: 23px;
   color: #fff;
 }
-/*------------------------------------------------------------ここからquestion*/
+/*-----------------------ここからquestion*/
 .question{
   padding: 55px 145px;
   box-sizing: border-box;
@@ -1174,7 +1261,7 @@ p#money{
   text-align: center;
   margin: 0;
 }
-/*-------------------------------------------------------------ここからfooter*/
+/*-------------------ここからfooter*/
 footer{
   height: 178px;
   box-sizing: border-box;
@@ -1189,41 +1276,34 @@ footer{
 footer span{
   color: #4987BD;
 }
-/*-----------------------------------------------------------ここから戻るボタン*/
-#page_top{
-  width: 65px;
-  height: 65px;
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  background: silver;
-  opacity: 0.6;
-}
-/*#page_top a{*/
-/*  position: relative;*/
-/*  display: block;*/
-/*  width: 50px;*/
-/*  height: 50px;*/
-/*  text-decoration: none;*/
-/*  background-color: red*/
+/*-----------------ここから戻るボタン*/
+/*#page_top{*/
+/*  width: 65px;*/
+/*  height: 65px;*/
+/*  position: fixed;*/
+/*  right: 50px;*/
+/*  bottom: 50px;*/
+/*  background: silver;*/
+/*  opacity: 0.6;*/
 /*}*/
-#page_top a::before{
-  font-family: FontAwesome;
-  content: "\f077"; 
+
+/*#page_top a::before{*/
+/*  font-family: FontAwesome;*/
+/*  content: "\f077"; */
   /*content: '↑';*/
-  font-size: 25px;
-  color: #fff;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-}
+/*  font-size: 25px;*/
+/*  color: #fff;*/
+/*  position: absolute;*/
+/*  width: 25px;*/
+/*  height: 25px;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  left: 0;*/
+/*  margin: auto;*/
+/*  text-align: center;*/
+/*}*/
+
+p {color: red}
 
 
-p {color: blue}/* 利用の際は消去 */
-}
