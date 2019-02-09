@@ -388,7 +388,6 @@ font-size: 18px;
     height: 50px;
   }
 }/*-- ここまでがPC版 --*/
-
 /*ここからisaratoha*/
 .circle{
   width: 60px;
@@ -431,7 +430,7 @@ font-size: 18px;
   box-sizing: border-box;
   /* text-align: center; */
   font-size: 18px;
-  margin-top: 44px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   line-height: 40px;
@@ -477,6 +476,7 @@ font-size: 18px;
   border-radius: 5px;
   margin: auto;
   display: block;
+  padding: 5px 0 5px 0 ;
 }
 .sukiru_sub{
   margin: 20px 0;
@@ -502,7 +502,7 @@ font-size: 18px;
   width: 30px;
 }
 
-/*— tb版以上で表示しpc版では消したいもの！ ここから480で様子見--*/
+/*ここからisaratoha tablet_area*/
 @media screen and (min-width:425px) {
 .isaratoha{
   height: 530px;
@@ -523,6 +523,7 @@ font-size: 18px;
   border-radius: 5px;
   margin: auto;
   display: block;
+  padding: 0;
 }
 .sukiru_sub{
   margin: 20px 0;
@@ -535,7 +536,6 @@ font-size: 18px;
   display: inline-block;
   max-resolution: 30%;
 }
-
 .sukiru_tagu p{
   font-size: 10px;
   text-align: center;
@@ -547,34 +547,65 @@ font-size: 18px;
 .sukiru_tagu_img{
   width: 30px;
 }
-}/*-- ここまでがtablet版 --*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-- ここからPC版表示CSS pc_area --*/
+}/*ここまでisaratoha tablet_area*/
+/*ここからisaratoha pc_area*/
 @media screen and (min-width:768px) {
+.circle{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    top:-40px;
+    bottom: -40px;
+}
+.isaratoha h3{
+  font-size: 28px;
+}
+.isaratoha h3::before{
+  width: 50px;
+  height: 50px;
+  top: -35px;
+}
+.isaratoha h3::after{
+  width: 50px;
+  height: 50px;
+  bottom: -35px;
+  right: 0;
+}
+.isaratoha_kasegu{
+  font-size: 16px;
+  line-height: 26px;
+}
+.sukiru_sub{
+  font-size: 16px;
+  line-height: 26px;
+}
+.sukiru_tagu {
+  display: inline-block;
+  max-resolution: 30%;
+  margin: 0 15px 20px 15px;
+}
+
+.sukiru_tagu p{
+  font-size: 12px;
+  line-height: 19px;
+}
+.sukiru_tagu_img{
+  width: 50px;
+}
+.sukiru{
+  padding: 20px;
+}
+}/*ここまでisaratoha pc_area*/
 
 
 
 
 
 
-}/*-- ここまでがPC版 --*/
+
+
+
 
 
 
