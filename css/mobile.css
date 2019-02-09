@@ -4,7 +4,18 @@
  - 425px〜767px： tablet
  - 768px〜     ： PC
 ====================*/
+/* 上記はやり直し */
 
+/*====================
+{{スマホを基本設計にする}
+   ベース        : mobile
+ - 425px以上     : tablet
+ - 768px以上     : PC
+====================*/
+html{
+  margin:0;
+  padding:0;
+}
 img {
   border: 0;
   max-width: 100%;
@@ -14,26 +25,48 @@ body{
   margin: 0;
   padding: 0;
   width:100%;
-  font-family: "メイリオ";
+}
+body p{
+  font-family: 'Hiragino Kaku Gothic Pro';
+}
+body h{
+  font-family: 'Hiragino Kaku Gothic Pro';
+}
+body a{
+  font-family: 'Hiragino Kaku Gothic Pro';
+}
+/* 上記をまとめて書く方法は？ あとで*/
+
+  .mb{display:block;}
+  .pc{display:none;}
+@media screen and (min-width:425px) {
+  .mb{display:block;}
+  .pc{display:none;}
+}
+@media screen and (min-width:768px) {
+  .mb{display:none;}
+  .pc{display:block;}
 }
 /*ここは共通のheader----------------*/
 header{
-  width:100%;
+  width: 100%;
   position: fixed;
-  height: 62px;
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-  z-index: 2;
-}
-.header_title {
+  top: 0;
   height: 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+
+.header_title {
   max-width: 100%;
   top:0;
   margin: 0 ;
   background-color: #fff;
   display: block;
-  clear: fixed;
 }
 .header_image img{
   float: left;
@@ -44,7 +77,6 @@ header{
   margin: 20px 0;
 }
 .head_sub{
-  /*height: 10px;*/
   width: 170px
   margin: 0px;
   position: absolute;
@@ -61,8 +93,11 @@ header{
 }
 .header_siryou{
   display: block;
-  -align: center;
+  text-align: center;
   float: right;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height:1.6;
   padding: 9px 11px;
   background-color: #da6b64;
   height: 60px;
@@ -73,8 +108,10 @@ header{
 .header_siryou img{
   display:block;
 }
+
 .header_siryou a{
   display:block;
+  font-weight: lighter;
   font-size: 12px;
   color: #fff;
   text-decoration: none;
@@ -83,33 +120,8 @@ header{
   float: right;
 }
 
-/*-- ここからmobile版表示CSS  --*/
-/*@media screen and (min-width:1px) and ( max-width:424px){*/
-@media screen and (max-width:424px){
-.none{
-    display:none;
-}
-.mobile_area{
-    display:block;
-}
-}/*-- ここまでがmobile版  --*/
-/*-- ここからtablet版表示CSS  --*/
-@media screen and (min-width:425px) and (max-width:767px) {
-.none{
-    display:none;
-}
-.tablet_area{
-    display:block;
-}
-}/*-- ここまでがtablet版  --*/
-/*-- ここからPC版表示CSS  pc_area --*/
+/*-- ここからheader  pc_area --*/
 @media screen and (min-width:768px) {
-.none{
-  display:none;
-}
-.pc_area{
-  display:block;
-}
 .header_btn{
     font-family: "メイリオ";
     font-size: 14px;
@@ -133,7 +145,6 @@ header{
   margin: 10px;
   display: inline-block;
   padding: 0;
-
 }
 .head_sub{
   width: 300px;
@@ -147,17 +158,24 @@ header{
   font-size: 12px;
   line-height: 19px;
 }
-}/*-- ここまでがPC版  --*/
+}/*-- ここまでheader  pc_area --*/
 /*ここは共通のmainーーーーーーーーー*/
 .main {
-  margin: 0px;
-  padding-top: 80px;
+  clear: both;
+  margin: 60px 0 0 0 ;
+  padding: 0;
   height: 300px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   background-image: url(../images/main.png);
+/* 写真問題はあとで */
   background-size: cover;
+  background-position: center top ;
+}
+.main p {
+  margin: 0;
+  padding: 0;
 }
 .txt1{
   text-align: center;
@@ -188,19 +206,23 @@ header{
   height: auto;
   margin-bottom: 20px;
 }
-
-/*-- ここからPC版表示CSS pc_area --*/
+.cover-text{
+  padding:50px;
+  height: 300px;
+  margin: 0px;
+}
+/*-- ここからmain pc_area --*/
 @media screen and (min-width:768px) {
-.none{display:none;}
-.pc_area{display:block;}
-
 .main{
   height: 500px;
+  padding-top: 25px;
+  background-image: url(../images/main.png);
 }
 .cover-text{
   margin: 100px;
 }
-}/*-- ここまでがPC版 --*/
+}/*-- ここまでmain pc_area --*/
+
 /*ここからotoiawase----------------*/
 .otoiawase{
   height: 455px;
@@ -225,14 +247,11 @@ p#money{
   padding: 3px;
   background-color: #f6f6f6;
   border-radius: 6px;
-  width: 380px;
+  max-width: 380px;
   margin: auto;
 }
 
 /*— PC版では消して、mobile版だけに表示するもの！ --*/
-@media screen and (max-width:424px){
-.none{display:none;}
-.mobile_area{display:block;}
 .main_btn{
   background-color: #da6b64;
   border-radius: 100px;
@@ -243,31 +262,13 @@ p#money{
   margin-bottom: 50px;
   padding: 20px;
 }
-}/*-- ここまでがmobile版 --*/
+/*-- ここまでがmain mobile版 --*/
 
-/*— PC版では消して、tablet版だけに表示するもの！ --*/
-@media screen and (min-width:425px) and (max-width:767px) {
-.none{display:none;}
-.tablet_area{display:block;}
-.main_btn{
-  background-color: #da6b64;
-  border-radius: 100px;
-  text-align: center;
-  line-height: 25px;
-  margin: 20px ;
-  font-size: 20px;
-  margin-bottom: 50px;
-  padding: 20px;
-}
-}/*-- ここまでがtablet版 --*/
-/*-- ここからPC版表示CSS pc_area --*/
+/*-- ここからmain pc_area --*/
 @media screen and (min-width:768px) {
-.none{display:none;}
-.pc_area{display:block;}
 
-.br_sp{display: none}
 .main_btn{
-  width: 768px;
+  max-width: 90%;
   height: 75px;
   background-color: #DA6B64;
   border-radius: 100px;
@@ -290,26 +291,29 @@ font-size: 18px;
   font-size: 18px;
   margin-top: 50px;
 }
-}/*-- ここまでがPC版 --*/
+}/*-- ここまでがmain pc_area --*/
 /*ここからjiyu-----------------*/
 .jiyu{
   height: 650px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-image: url(../images/jiyu.png);
-  background-size: cover;
+ /* background-position:  center bottom;       エディタの不具合箇所  */
+   background-position:center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin: 0;
   padding-top: 35px;
   font-size: 15px;
-  line-height: 24px;
-  font-weight: 600;
+  line-height: 20px;
+  font-weight: 300;
   text-align: center;
 }
 .jiyu h3{
   font-family: 'Hiragino Kaku Gothic Pro';
   position: relative;
-  width: 100%;
-  height: 100px;
+  max-width: 90%;
+  height: 80px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -326,6 +330,224 @@ font-size: 18px;
   font-size: 14px;
   line-height: 24px;
 }
+.jiyu h3::before{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.jiyu h3::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+.jiyu p{
+  line-height: 32px;
+}
+.jiyu .under{
+  /*text-decoration: underline  これではダメ*/
+  /*border-bottom: solid 10px #EBB94D;*/
+  background: linear-gradient(transparent 70%, #EBB94D 70%);
+  font-weight: 700;
+  padding-bottom: 0;
+}
+.jiyu div:nth-child(1){
+  margin-bottom: 20px;
+}
+
+/*-- ここからPC版表示CSS pc_area --*/
+@media screen and (min-width:768px) {
+  .jiyu h3{
+    height: 90px;
+    font-size: 24px;
+    line-height: 90px;
+  }
+  .jiyu p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .jiyu h3::before{
+    width: 50px;
+    height: 50px;
+  }
+  .jiyu h3::after{
+    width: 50px;
+    height: 50px;
+  }
+}/*-- ここまでがPC版 --*/
+
+/*ここからisaratoha*/
+.circle{
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #EBB94D;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400px;
+  margin: 0 auto;
+  position: relative;
+  top:-30px;
+  bottom: -30px;
+}
+.isaratoha{
+  /* height: 620px; */
+  height:auto;
+  background-color: #FEF5E0;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.ikusei{
+  width: 100%;
+  height: 130px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+.isaratoha h3{
+  position: relative;
+  max-width: 90%;
+  font-weight: 600;
+  height: 126px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* text-align: center; */
+  font-size: 18px;
+  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 40px;
+  color: #333;
+}
+
+.isaratoha h3::before{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: -35px;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.isaratoha h3::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: -35px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+.isaratoha_kasegu{
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+}
+.sukiru{
+  max-width: 90%;
+  height: 265px;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+}
+.sukiru_sub{
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+}
+.sukiru_tagu {
+  display: inline-block;
+  max-resolution: 30%;
+  margin: 0 5px 20px 10px;
+}
+
+.sukiru_tagu p{
+  font-size: 10px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 16px;
+}
+.sukiru_tagu_img{
+  width: 30px;
+}
+
+/*— tb版以上で表示しpc版では消したいもの！ ここから480で様子見--*/
+@media screen and (min-width:425px) {
+.isaratoha{
+  height: 530px;
+}
+
+.isaratoha_kasegu{
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+}
+.sukiru{
+  max-width: 90%;
+  height: auto;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+}
+.sukiru_sub{
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+}
+.sukiru_tagu {
+  display: inline-block;
+  max-resolution: 30%;
+}
+
+.sukiru_tagu p{
+  font-size: 10px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 16px;
+  margin: 0 10px;
+}
+.sukiru_tagu_img{
+  width: 30px;
+}
+}/*-- ここまでがtablet版 --*/
 
 
 
@@ -344,27 +566,15 @@ font-size: 18px;
 
 
 
+/*-- ここからPC版表示CSS pc_area --*/
+@media screen and (min-width:768px) {
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}/*-- ここまでがPC版 --*/
 
 
 
@@ -383,3 +593,13 @@ font-size: 18px;
 
 
 /*-- 最下部 --*/
+.mb{display:block;}
+.pc{display:none;}
+@media screen and (min-width:425px) {
+.mb{display:block;}
+.pc{display:none;}
+}
+@media screen and (min-width:768px) {
+.mb{display:none;}
+.pc{display:block;}
+}
