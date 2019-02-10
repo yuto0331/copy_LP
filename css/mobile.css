@@ -25,6 +25,7 @@ body{
   margin: 0;
   padding: 0;
   width:100%;
+  /* font-family: Meiryo; */
 }
 body p{
   font-family: 'Hiragino Kaku Gothic Pro';
@@ -811,15 +812,257 @@ font-size: 18px;
   line-height: 22px;
   margin-bottom: 5px;
 }
+}/*ここまでmanabu pc_area */
+/*ここからmerrito ベース */
+.meritto{
+  height: auto;
+  /* max-width:100%; */
+  text-align: center;
+  background-color: #FEF5E0;
+  padding: 50px 20px;
+}
+#meritto_text1{
+  margin:0 auto;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}
+#meritto_text2{
+  margin:0 auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+}
+.meritto_title{
+  max-width: 100%;
+  height: 112px;
+  margin:0 auto;
+  padding: 25px 0 0 0 ;
+  position: relative;
+}
+.meritto_title::before{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+.meritto_title::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
 }
 
+.meritto_box{
+  /* vertical-align: top; */
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  padding: 0;
+  margin: 15px 0;
+}
+#each_meritto_tag{
+  width: 100%;
+  max-height: 120px;
+  background-position: center center;
+  -webkit-background-size: cover;
+}
+#meritto_text3{
+  color: #ebb94d;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  margin: 10px 0;
+}
+#meritto_text4{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: left;
+  margin: 0px;
+  padding: 0 20px;
+}
+.mado_box{
+  max-width: 100%;
+  height: 175px;
+  background-color: #ffffff;
+  border: 2px solid #EBB94D;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+}
+#mado_text1{
+  margin-bottom: 0px;
+  font-weight:600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ebb94d;
+}
+#mado_text2{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 10px;
+}
+#mado_text3{
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px;
+}
+.notes{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  margin-top: 20px;
+}
+/*ここからmerrito table-area */
+@media screen and (min-width:425px) {
+  .meritto{
+    height: 1135px
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}/*ここまでmerrito table-area */
+/*ここからmerrito pc-area */
+@media screen and (min-width:768px) {
+  .meritto{
+    height: auto;
+    padding: 50px 0x;
+  }
+  #meritto_text1{
+    font-size: 16px;
+    line-height: 40px;
+  }
+  #meritto_text2{
+    font-size: 24px;
+  }
+  .meritto_title{
+    max-width: 100%;
+    height: 105px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0 auto;
+    padding: 25px 0 0 0 ;
+    position: relative;
+  }
+  .meritto_title::before{
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 70px;
+  }
+  .meritto_title::after{
+    width: 50px;
+    height: 50px;
+    bottom: -30px;
+    right: 70px;
+  }
+  .meritto_logo{
+    padding: 65px 0 60px 0 ;
+  }
+  .meritto_box{
+    vertical-align: top;
+    /* width: 300px; */
+    max-width: 100%
+    height: auto;
+    display: inline-block;
+    padding: 0;
+  }
+  #each_meritto_tag{
+    width: 300px;
+    max-height: 180px;
+  }
+  #meritto_text3{
+    color: #ebb94d;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  #meritto_text4{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    margin: 0px;
+    padding: 0 20%;
+  }
+  .mado_box{
+    max-width: 90%;
+    height: 175px;
+    background-color: #ffffff;
+    border: 2px solid #EBB94D;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  #mado_text1{
+    margin-bottom: 0px;
+    font-weight:600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #ebb94d;
+  }
+  #mado_text2{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 10px;
+  }
+  #mado_text3{
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .notes{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+}/*ここまでmerrito pc-area */
+/*ここまでmerrito 特別にbig_area */
 
+@media screen and (min-width:990px) {
+  .meritto{
+    height: 1010px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 50px 0x;
+  }
+  .meritto_box{
+    vertical-align: top;
+    width: 300px;
+    /* max-width: 100% */
+    margin: 0.3%;
+    height: auto;
+    display: inline-block;
+    padding: 0;
+  }
 
-
-
-
-
-
+  #meritto_text4{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    margin: 0px;
+    padding: 0 20px;
+  }
+}
 
 
 
