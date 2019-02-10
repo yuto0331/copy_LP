@@ -597,19 +597,169 @@ font-size: 18px;
   padding: 20px;
 }
 }/*ここまでisaratoha pc_area*/
+/*ここからstep  ベース */
+.step{
+  height: 605px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(../images/aboutsecondbg.jpg);
+  background-size: cover;
+  padding-top: 20px;
+  position: relative;
+}
+.step h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.step_sub{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 0;
+}
+.step span{
+  color: #EBB94D;
+}
+.box_area{
+  text-align: center;
+  margin: 30px 0;
+}
+.step_box{
+  /* position: relative; */
+  max-width: 90%;
+  height: 110px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px;
+  margin:  10px auto;
+  text-align: center;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5px;
+}
+#step{
+  padding: 0px;
+  border-radius: 5px;
+  background-color: #EBB94D;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+#sub{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px;
+  margin: 5px;
+}
+#work{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px
+}
+.ao{
+  margin: 0px;
+  height: 96px;
+  background-color: #016EA9;
+  padding: 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  bottom:0;
+}
+.ao_text{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;  padding: 0px;
+}
+/*ここからstep  pc_area */
+@media screen and (min-width:768px) {
+  .step{
+    height: 930px;
+    padding-top: 40px;
+  }
+  .step h3{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .step_sub{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 15px 0px;
+  }
+  .box_area{
+    text-align: center;
+    margin: 30px 0 65px 0;
+  }
+  .step_box{
+    max-width: 38%;
+    height: 170px;
+    padding: 16px;
+    margin:  10px auto;
+    text-align: center;
+  }
+  #step{
+    padding: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 20px;
+  }
+  #sub{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 15px;
+  }
+  #work{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px
+  }
+  .ao{
+    margin: 0px;
+    padding: 0px;
+    height: 130px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position:center bottom;
+    position:relative;
+    /* bottom: -30; */
+    /* position: absolute;
+    bottom: 0; */
+  }
+  .ao_text{
+    font-size: 16px;
+    line-height: 26px;
+    box-sizing: borderbox;
+    padding: 39px;
+  }
 
 
 
 
+}
 
 
-
-
-
-
-
-
-
+/*ここからmanabu*/
+.manabu{
+  margin-top:200px;
+  height: 505px;
+  box-sizing: border-box;
+  padding: 60px;
+  text-align: center;
+}
 
 
 
