@@ -1035,8 +1035,7 @@ font-size: 18px;
     margin-top: 20px;
   }
 }/*ここまでmerrito pc-area */
-/*ここまでmerrito 特別にbig_area */
-
+/*ここからmerrito 特別にbig_area */
 @media screen and (min-width:990px) {
   .meritto{
     height: 1010px;
@@ -1062,7 +1061,267 @@ font-size: 18px;
     margin: 0px;
     padding: 0 20px;
   }
+}/*ここまでmerrito 特別にbig_area */
+/*ここからmenber ベース */
+.menber{
+  /* height: 1610px; */
+  height: auto;
+  margin: 0;
+  background-image: url(../images/teacherbg.jpg);
+  background-size: cover;
+  /* padding: 65px 0 0 0; */
+  padding: 50px 0 0 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative; /*基準BOX用*/
 }
+.menber h3{
+  font-weight: 600;
+  /* font-size:28px; */
+  font-size:18px;
+  line-height: 40px;
+  margin: 0px;
+}
+#menber_sub{
+  margin-bottom: 0px;
+  font-weight: 600;
+  /* font-size:16px; */
+  font-size:12px;
+  /* line-height: 26px; */
+  line-height: 19px;
+}
+.menbers{
+  /* padding: auto; */
+  padding: 0;
+}
+.each_menber{
+ /* width: 370px; */
+  max-width:95%;
+  /* height: 400px; */
+  height: auto;
+  /* box-sizing: border-box; */
+  display: inline-block;
+  vertical-align: top;
+  /* margin: 0 15px 150px 15px; */
+  margin: 0;
+}
+.menber_img{
+  border-radius: 50%;
+  /* width: 200px; */
+  width: 120px;
+  /* height: 200px; */
+  height: 120px;
+  position:relative;
+  bottom: -35px;
+}
+.each_menber_text{
+  border: 3px solid ;
+  font-weight: 300;
+  /* font-size: 16px; */
+  font-size: 12px;
+  /* line-height: 26px; */
+  line-height: 19px;
+  /* padding: 20px; */
+  /* padding: 30px 0 ; */
+  padding: 30px 0 10px 0;
+  /* width: 375px; */
+  /* height: 365px; */
+  height: auto;
+  /* box-sizing: border-box; */
+}
+.each_menber_text p:nth-child(3){
+  text-align: left;
+}
+.each_menber_text p + p{
+  margin: 5px;
+}
+.qa{
+	position: absolute;
+	bottom: 0;
+	/* height: 270px; */
+	height: 210px;
+	max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #EBB94D;
+  position: relative;
+  margin-top: 10px;
+  /* padding: 40px; */
+  padding: 10px;
+}
+.qa_circle{
+  /* width: 80px; */
+  width: 60px;
+  /* height: 80px; */
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: #EBB94D;
+  /* line-height: 80px; */
+  line-height: 60px;
+  font-weight:400;
+  /* font-size: 14px; */
+  font-size: 16px;
+  margin: 0 auto;
+}
+.qa_sub p{
+  font-weight: 600;
+  /* font-size: 28px; */
+  font-size: 14px;
+  line-height: 40px;
+  width: 100%;
+  height: 110px;
+  margin: 0px auto;
+  /* padding: 15px; */
+  padding: 15px 0 0 0;
+  position: relative;
+}
+.qa_sub p::before{
+  color: #ffffff;
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+.qa_sub p::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}/*ここまでmenber ベース */
+/*ここからmenber tablet_area */
+@media screen and (min-width:425px) {
+  .each_menber_text{
+    border: 3px solid ;
+    font-weight: 300;
+    /* font-size: 16px; */
+    font-size: 12px;
+    /* line-height: 26px; */
+    line-height: 19px;
+    /* padding: 20px; */
+    /* padding: 30px 0 ; */
+    padding: 30px 0 10px 0;
+    /* width: 375px; */
+    height: 175px;
+    /* height: auto; */
+    box-sizing: border-box;
+  }
+}/*ここまでmenber tablet_area */
+/*ここからmenber big_area */
+@media screen and (min-width: 995px) {
+  .menber{
+    height: 1270px;
+    background-image: url(../images/teacherbg.jpg);
+    background-size: cover;
+    padding: 50px 0 0 0;
+    text-align: center;
+    color: #ffffff;
+    position: relative; /*基準BOX用*/
+  }
+  .menber h3{
+    font-size:24px;
+  }
+  #menber_sub{
+    margin-bottom: 0px;
+    font-size:14px;
+    line-height: 22px;
+  }
+  .menbers{
+    /* padding: auto; */
+    padding: 0;
+  }
+  .each_menber{
+    width: 370px;
+    vertical-align: top;
+    margin: 15px;
+  }
+  .menber_img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    bottom: -35px;
+  }
+  .each_menber_text{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 40px;
+    height: 330px;
+    width: 370px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .qa{
+  	position: absolute;
+  	bottom: 0;
+  	height: 270px;
+  	max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #EBB94D;
+    position: relative;
+    margin-top: 10px;
+    /* padding: 40px; */
+    padding: 30px;
+  }
+  .qa_circle{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .qa_sub p{
+    font-size: 18px;
+    width: 100%;
+    height: 110px;
+    margin: 0px auto;
+    /* padding: 15px; */
+    padding: 15px 0 0 0;
+    position: relative;
+  }
+  .qa_sub p::before{
+    color: #ffffff;
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 120px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+  }
+  .qa_sub p::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    bottom: 0;
+    right: 120px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+  }
+}/*ここまでmenber big_area */
+
+
+
+
 
 
 
