@@ -2061,26 +2061,157 @@ font-size: 18px;
   display: block;
 }
 }/*ここまでtokuten pc_area */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*ここからnot_bora ベース */
+.not_bora {
+  /* height: 530px; */
+  height: 490px;
+  box-sizing: border-box;
+  background-image: url(../images/specialdetail.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin:0;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+.not_bora h3 {
+  font-weight:600;
+  /* font-size: 28px; */
+  font-size: 18px;
+  /* line-height: 45px; */
+  line-height: 29px;
+  margin-bottom: 25px;
+}
+#not_bora_text1{
+  font-weight:600;
+  /* font-size: 20px; */
+  font-size: 12px;
+  /* line-height: 32px; */
+  line-height: 19px;
+  margin-bottom: 50px;
+}
+#not_bora_text2{
+  font-weight:600;
+  /* font-size: 28px; */
+  font-size: 18px;
+  /* line-height: 60px; */
+  line-height: 40px;
+  margin: 0 auto;
+  width: 90%;
+  /* height: 60px; */
+  height: 80px;
+  position: relative;
+}
+#not_bora_text2::before{
+  position: absolute;
+  content: "";
+  /* width: 50px; */
+  width: 30px;
+  /* height: 50px; */
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+}
+#not_bora_text2::after{
+  position: absolute;
+  content: "";
+  /* width: 50px; */
+  width: 30px;
+  /* height: 50px; */
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+}
+#not_bora_text3{
+  font-weight:600;
+  /* font-size: 20px; */
+  font-size: 12px;
+  /* line-height: 32px; */
+  line-height: 19px;
+  margin: 50px;
+}
 .not_bora {
   background-color: silver;
-}
+}/*ここまでnot_bora ベース */
+/*ここからnot_bora pc_area */
+@media screen and (min-width:768px) {
+  .not_bora {
+    height: 490px;
+    box-sizing: border-box;
+    padding-top: 50px;
+  }
+  .not_bora h3 {
+    font-weight:600;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 25px;
+  }
+  #not_bora_text1{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+  #not_bora_text2{
+    font-weight:600;
+    /* font-size: 28px; */
+    font-size: 18px;
+    /* line-height: 60px; */
+    line-height: 80px;
+    margin: 0 auto;
+    width: 90%;
+    /* height: 60px; */
+    height: 80px;
+    position: relative;
+  }
+  #not_bora_text2::before{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+  }
+  #not_bora_text2::after{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    right: 0;
+  }
+  #not_bora_text3{
+    font-weight:600;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px;
+  }
+  .not_bora {
+    background-color: silver;
+  }
+}/*ここまでnot_bora pc_area */
+/*ここからmessage ベース */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
