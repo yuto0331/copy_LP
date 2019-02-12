@@ -755,7 +755,6 @@ font-size: 18px;
   max-height: 370px;
   text-align: center;
   padding: 30px 0;
-  background-color: silver;
 }
 .manabu_yomi{
   font-size: 12px;
@@ -1671,13 +1670,231 @@ font-size: 18px;
   font-size:20px;
   line-height:32px;
   padding: 40px;
-  background-color: red;
 }
 .risuku_zero p{
   margin: 0;
   padding: 0;
 }
-}/*ここからnaiyou pc_area */
+}/*ここまでnaiyou pc_area */
+/*ここからnagare ベース */
+.nagare {
+  /* height: 1835px; */
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  /* text-align: center; */
+  text-align: left;
+}
+.nagare h3{
+  /* margin: 60px 0; */
+  margin: 45px 0;
+  font-weight: 600;
+  /* font-size: 28px; */
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+}
+.nagare_area{
+
+}
+.consal{
+  /* height: 230px; */
+  height: auto;
+  width: 95%;
+  box-sizing: border-box;
+  background-color: #FEF5E0;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* padding: 0px 50px; */
+}
+.nagare_title{
+  margin:0;
+  /* padding: 45px 0; */
+  padding: 10px;
+  /* width: 170px; */
+  width: 100%;
+  /* height: 180px; */
+  height: 35px;
+  font-weight: 600;
+  /* font-size: 18px; */
+  font-size: 15px;
+  line-height: 35px;
+  vertical-align: center;
+  /* display: table-cell; */
+}
+.nagare_area dd{
+  background-color: #FEF5E0;
+}
+.nagare_area dd{
+  background-color: #FEF5E0;
+}
+.nagare_text{
+    /* display: table-cell; */
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+    /* background-color: #FEF5E0; */
+}
+.nagare_title_sub {
+  font-weight: 600;
+  /* font-size: 16px; */
+  font-size: 12px;
+  /* line-height: 26px; */
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.nagare_content {
+  font-weight: 300;
+  /* font-size: 14px; */
+  font-size: 12px;
+  /* line-height: 22px; */
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.nagare_content_2 {
+  font-weight: 600;
+  /* font-size: 16px; */
+  font-size: 12px;
+  /* line-height: 26px; */
+  line-height: 19px;
+}/*ここまでnagare ベース */
+/*ここからnagare pc_area */
+@media screen and (min-width:768px) {
+.nagare {
+  /* height: 1835px; */
+  height: auto;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px;
+}
+#nagare_flow{
+  margin-bottom: 30px;
+  width: 100%;
+}
+.flow{
+  width: 80%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+.nagare h3{
+  margin: 60px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+.nagare_area{
+}
+.nagare_title{
+  margin:0;
+  padding: 45px 0;
+  width: 170px;
+  /* max-width: 95%; */
+  height: 180px;
+  font-weight: 600;
+  font-size: 18px;
+  display: table-cell
+  line-height: 29px;
+}
+.consal{
+  height: 230px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FEF5E0;
+  border-radius: 10px;
+  margin:0 auto;
+  padding: 0px 50px;
+  display: table;
+}
+.nagare_text{
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+}
+.nagare_title_sub {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.nagare_content {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+}
+.nagare_content_2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+}/*ここまでnagare pc_area */
+/*ここからnaze ベース */
+.naze{
+  /* height: 500px; */
+  height: auto;
+  box-sizing: border-box;
+  color: #fff;
+  background-image: url(../images/bangkokbg.jpg);
+  background-size: cover;
+}
+.naze_content{
+  /* padding:100px; */
+  padding:35px;
+}
+
+.naze h3{
+  font-weight:600;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.naze_text1{
+  font-weight:300;
+  /* font-size: 14px; */
+  font-size: 12px;
+  /* line-height: 22px; */
+  line-height: 19px;
+}
+.naze li{
+  font-weight:600;
+  /* font-size: 16px; */
+  font-size: 12px;
+  /* line-height: 26px; */
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.naze_text2{
+  font-weight:600;
+  /* font-size: 20px; */
+  font-size: 15px;
+  /* line-height: 32px; */
+  line-height: 24px;
+}
+/*ここまでnaze ベース */
+/*ここからnaze pc_area */
+@media screen and (min-width:768px) {
+  .naze{
+    /* height: 500px; */
+    height: auto;
+  }
+  .naze_content{
+    padding:55px;
+  }
+  .naze li{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .naze_text2{
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 
 
 
@@ -1687,8 +1904,9 @@ font-size: 18px;
 
 
 
-
-
+.tokuten {
+  background-color: silver;
+}
 
 
 
