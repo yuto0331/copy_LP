@@ -2552,9 +2552,30 @@ font-size: 18px;
     padding: 20px;
     margin-bottom: 10px;
   }
+}/*ここまでquestion pc_area */
+/*ここからfooter ベース */
+footer{
+  /* height: 178px; */
+  height: 110px;
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  /* padding: 50px; */
+  text-align: center;
+  font-weight: 300;
 }
 
-
+footer p{
+  font-size: 10px;
+}
+footer p:first-child{
+  padding-top: 30px;
+}
+footer span{
+  color: #4987BD;
+}
+.last{
+  margin:20px;
+}
 
 
 
