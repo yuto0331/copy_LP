@@ -1950,7 +1950,7 @@ font-size: 18px;
 }
 .tokuten_circle{
   /* width: 250px; */
-  width: 100%;
+  max-width: 100%;
   /* height: 250px; */
   height: 60px;
   box-sizing: border-box;
@@ -1972,8 +1972,10 @@ font-size: 18px;
   line-height: 60px;
   color:#F7C23C;
   background-color: #fff;
-  display: inline-block;
   text-align: center;
+  /* display: inline-block; */
+  display: table-cell;
+  vertical-align: middle;
 }
 .circle_title2 {
   font-weight:600;
@@ -1985,7 +1987,10 @@ font-size: 18px;
   margin: 0;
   color: #ffffff;
   text-align: left;
-  display: inline-block;
+  /* display: inline-block; */
+  max-width: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }/*ここまでtokuten ベース */
 /*ここからtokuten pc_area */
 @media screen and (min-width:768px) {
@@ -2196,11 +2201,116 @@ font-size: 18px;
   }
 }/*ここまでnot_bora pc_area */
 /*ここからmessage ベース */
-
-
-
-
-
+.message{
+  /* height: 580px; */
+  height: auto;
+  box-sizing: border-box;
+  text-align: center;
+  /* padding: 60px; */
+  padding: 20px;
+}
+.message h3{
+  font-weight:600;
+  /* font-size: 28px; */
+  font-size: 18px;
+  line-height: 40px;
+  margin: 10px 0 50px 0;
+}
+.message_sub {
+  font-weight: 700;
+  /* font-size: 20px; */
+  font-size: 15px;
+  /* line-height: 32px; */
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.message_area{
+  width: 100%;
+  /* height: 350px; */
+  height: auto;
+  display: table;
+  margin: auto;
+}
+.message_content{
+  padding: 20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.message_content p{
+  margin-bottom: 15px;
+}
+.message_area img{
+  /* display: table-cell; */
+  max-width:100%;
+  height: auto;
+}/*ここまでmessage ベース */
+/*ここからmessage pc_area */
+@media screen and (min-width:768px) {
+  .message{
+    padding: 25px;
+  }
+  .message h3{
+    font-weight:600;
+    /* font-size: 18px; */
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 45px;
+  }
+  .message_sub {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 60px;
+  }
+  .message_content{
+    /* padding: 20px; */
+    padding: 0px;
+  }
+  .message_area img{
+    /* display: table-cell; */
+    max-width:100%;
+    height: auto;
+  }
+}/*ここまでmessage pc_area */
+/*ここからmessage 特別にBig_area */
+@media screen and (min-width:990px) {
+  .message{
+    text-align: center;
+  }
+  .message_sub {
+    margin-bottom: 20px;
+  }
+  .message_area{
+    width: 1020px;
+    /* height: 350px; */
+    height: auto;
+    display: table;
+    margin: auto;
+  }
+  .message_content{
+    padding: 20px;
+    text-align: ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: table-cell;
+    vertical-align: top;
+    width: 750px;
+  }
+  .message_area img{
+    /* display: table-cell; */
+    width:230px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display:table-cell;
+    margin: 0;
+  }
+  .message_content p{
+    margin-bottom: 15px;
+  }
+}
 
 
 
@@ -2217,11 +2327,13 @@ font-size: 18px;
 
 
 /*-- 最下部 --*/
+.only_mb{display: block;}
 .mb{display:block;}
 .pc{display:none;}
 @media screen and (min-width:425px) {
 .mb{display:block;}
 .pc{display:none;}
+.only_mb{display: none;}
 }
 @media screen and (min-width:768px) {
 .mb{display:none;}
