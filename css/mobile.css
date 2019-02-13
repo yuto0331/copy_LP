@@ -2310,17 +2310,177 @@ font-size: 18px;
   .message_content p{
     margin-bottom: 15px;
   }
+}/*ここまでmessage 特別にBig_area */
+/*ここからsiryou ベース */
+.siryou{
+  height: auto;
+  box-sizing: border-box;
+  background-color: #EBB94D;
+  padding: 50px 15px;
+  text-align: center;
+}
+.siryou h3{
+  font-weight: 600;
+  /* font-size: 28px; */
+  font-size: 18px;
+  /* line-height: 48px; */
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+#siryou_title_sub{
+  font-weight: 600;
+  /* font-size: 16px; */
+  font-size: 12px;
+  /* line-height: 26px; */
+  line-height: 19px;
+  margin-bottom: 35px;
+}
+#first_name{
+  width: 100%;
+  /* height: 60px; */
+  height: 54px;
+  /* margin: 12px; */
+  margin: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#second_name{
+  width: 100%;
+  /* height: 60px; */
+  height: 54px;
+  margin: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#email{
+  width: 100%;
+  /* height: 60px; */
+  height: 54px;
+  margin: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#content{
+  width: 100%;
+  /* height: 105px; */
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /*margin: 25px 12px;*/
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  /* line-height: 105px; */
+  vertical-align: top;
+}
+#siryou_btn{
+  width: 100%;
+  height: 55px;
+  border-radius: 50px;
+  background-color: #DA6B64;
+  border: 1px solid #DA6B64;
+  font-weight: 600;
+  font-size: 23px;
+  color: #fff;
+}/*ここまでsiryou ベース */
+/*ここからsiryou pc_area */
+@media screen and (min-width:768px) {
+.siryou{
+  padding: 65px 145px;
+}
+.siryou h3{
+  font-size: 24px;
+}
+#siryou_title_sub{
+  font-size: 14px;
+  line-height: 22px;
+}
+#first_name{
+  width: 100%;
+  /* height: 60px; */
+  height: 54px;
+  /* margin: 12px; */
+  margin: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#second_name{
+  width: 100%;
+  /* height: 60px; */
+  height: 54px;
+  margin: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#email{
+  width: 100%;
+  /* height: 60px; */
+  height: 54px;
+  margin: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#content{
+  width: 100%;
+  /* height: 105px; */
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /*margin: 25px 12px;*/
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  /* line-height: 105px; */
+  vertical-align: top;
+}
+#siryou_btn{
+  width: 100%;
+  height: 55px;
+  border-radius: 50px;
+  background-color: #DA6B64;
+  border: 1px solid #DA6B64;
+  font-weight: 600;
+  font-size: 23px;
+  color: #fff;
+}
 }
 
 
-
-
-
-
-
-
-
-
+.question{
+background-color: silver;
+}
 
 
 
